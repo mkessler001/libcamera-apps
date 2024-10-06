@@ -62,7 +62,7 @@ libcamera_app = library(
     dependencies : libcamera_app_dep,
 )
 
-subdir('apps')
+# subdir('apps')
 
 summary({
             'libav encoder' : enable_libav,
