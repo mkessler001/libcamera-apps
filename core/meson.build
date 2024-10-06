@@ -1,4 +1,6 @@
-boost_dep = dependency('boost', modules : ['program_options'], required : true)
+cmake_bin = find_program('cmake', required: false)
+cmake = import('cmake')
+boost_dep = dependency('boost', method : 'cmake', modules : ['program_options'], required : true)
 thread_dep = dependency('threads', required : true)
 
 rpicam_app_dep += [boost_dep, thread_dep]
