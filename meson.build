@@ -65,9 +65,9 @@ rpicam_app = library(
 # Install a symlink to the old library name for legacy purposes.
 install_symlink('libcamera_app.so',
                 install_dir: get_option('libdir'),
-                pointing_to: 'rpicam_app.so')
+                pointing_to: 'rpicam_app.a')
 
-subdir('apps')
+# subdir('apps')
 
 summary({
             'libav encoder' : enable_libav,
