@@ -1,3 +1,8 @@
+option('enable_apps',
+        type : 'boolean',
+        value : 'false',
+        description : 'Build the apps')
+
 option('enable_libav',
         type : 'feature',
         value : 'auto',
